@@ -10,6 +10,7 @@ import {
   faCalendar,
 } from "@fortawesome/free-brands-svg-icons";
 import Container from "./components/Container";
+import Image from "next/image";
 
 const indieFlower = Indie_Flower({
   weight: "400",
@@ -172,10 +173,12 @@ const Home = () => {
               </div>
               <div className="card-item bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl p-6 w-[180px] h-[180px] sm:w-[230px] sm:h-[230px] z-10 absolute -left-12 top-28 rotate-12"></div>
               <div className="card-item bg-[#FFF088] shadow-lg p-3 pt-6 w-[170px] h-[160px] sm:w-[210px] sm:h-[200px] transform rotate-2 absolute left-4">
-                <img
+                <Image
                   src="pin1.svg"
                   alt="Decorative pin"
                   className="w-8 h-8 sm:w-10 sm:h-10 absolute -top-7 left-1/2 -translate-x-1/2"
+                  width={32}
+                  height={32}
                 />
                 <div className="text-base sm:text-xl text-gray-700 font-handwriting font-medium leading-5 sm:leading-5">
                   Take notes to keep track of crucial details, and accomplish
@@ -273,24 +276,30 @@ const Home = () => {
                 </h3>
                 <div className="flex gap-4 relative w-full">
                   <div className="bg-white rounded-2xl p-2 w-[90px] h-[90px] flex items-center justify-center -rotate-6 top-8 left-2 absolute shadow-[4px_4px_10px_rgba(0,0,0,0.2)]">
-                    <img
+                    <Image
                       src="/gmail-icon.svg"
                       alt="Gmail"
                       className="w-16 h-16"
+                      width={64}
+                      height={64}
                     />
                   </div>
                   <div className="bg-white rounded-2xl p-2 w-[90px] h-[90px] flex items-center justify-center absolute left-[50%] -translate-x-1/2 top-2 z-30 shadow-[4px_4px_10px_rgba(0,0,0,0.2)]">
-                    <img
+                    <Image
                       src="/slack-icon.svg"
                       alt="Slack"
                       className="w-16 h-16"
+                      width={64}
+                      height={64}
                     />
                   </div>
                   <div className="bg-white rounded-2xl p-2 w-[90px] h-[90px] flex items-center justify-center rotate-6 absolute top-8 right-2 shadow-[4px_4px_10px_rgba(0,0,0,0.2)]">
-                    <img
+                    <Image
                       src="/calendar-icon.svg"
                       alt="Google Calendar"
                       className="w-16 h-16"
+                      width={64}
+                      height={64}
                     />
                   </div>
                 </div>
@@ -341,10 +350,12 @@ const Home = () => {
                     <div className="flex items-center flex-col">
                       <div className="text-gray-400 text-xs">Time</div>
                       <div className="ml-2 bg-[#DAF5FD] text-[#2787B5] px-3 py-1 rounded-lg text-xs flex items-center gap-1">
-                        <img
+                        <Image
                           src="clock-icon.svg"
                           className="h-4 w-4"
                           alt="Clock icon"
+                          width={16}
+                          height={16}
                         />
                         <span>13:00 - 13:45</span>
                       </div>
