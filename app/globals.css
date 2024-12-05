@@ -23,5 +23,5 @@ body {
 *,
 *::before,
 *::after {
-  /* border: 0.1px rgba(255, 0, 0, 0.52) dashed; */
+  border: 0.1px rgba(255, 0, 0, 0.52) dashed;
 }
